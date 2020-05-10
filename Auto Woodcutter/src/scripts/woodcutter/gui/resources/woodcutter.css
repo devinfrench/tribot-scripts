@@ -1,0 +1,122 @@
+.root {
+    -fx-background-color: #515a4e;
+    -fx-accent: #515a4e;
+    -fx-focus-color: #515a4e;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 120px;
+    -fx-tab-max-width: 120px;
+    -fx-tab-min-height: 30px;
+    -fx-tab-max-height: 30px;
+}
+
+.tab {
+    -fx-background-color: rgba(255, 255, 255, 0.8);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-background-insets: 0 1 0 1, 0, 0;
+}
+
+.tab:selected {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.tab-label {
+    -fx-alignment: CENTER;
+    -fx-text-fill: #515a4e;
+    -fx-font-size: 16px;
+}
+
+.tab:selected .tab-label {
+    -fx-font-weight: bold;
+}
+
+.tab-pane:top *.tab-header-area {
+    -fx-padding: 5 0 0 -1;
+}
+
+.anchor-tab-pane {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-background-radius: 0 5 5 5;
+}
+
+.button {
+    -fx-background-color: rgba(255, 255, 255, 0.95);
+    -fx-alignment: CENTER;
+    -fx-text-fill: #515a4e;
+    -fx-font-size: 16px;
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-font-weight: bold;
+}
+
+.label,
+.title-text {
+    -fx-text-fill: #515a4e;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.body-text {
+    -fx-text-fill: #515a4e;
+    -fx-font-size: 14px;
+}
+
+.check-box {
+    -fx-text-fill: #515a4e;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #515a4e;
+}
+
+.text-field,
+.choice-box .label,
+.combo-box .cell {
+    -fx-font-size: 14px;
+    -fx-text-fill: #515a4e;
+}
+
+.combo-box-popup .list-view .list-cell:hover,
+.combo-box-popup .cell:selected {
+    -fx-text-fill: white;
+}
+
+.text-area {
+    -fx-background-insets: 0;
+}
+
+.text-area,
+.text-area .content,
+.text-area:focused .content {
+    -fx-background-color: transparent, white, transparent, white;
+}
+
+.text-area:focused {
+    -fx-highlight-fill: #515a4e;
+}
+
+.text-area .content {
+    -fx-padding: 10px;
+    -fx-text-fill: #515a4e;
+    -fx-highlight-fill: #515a4e;
+}
+
+.text-area *.text {
+    -fx-font-size: 18px;
+    -fx-text-fill: #515a4e;
+    -fx-text-alignment: center;
+}

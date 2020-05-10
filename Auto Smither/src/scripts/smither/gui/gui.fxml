@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="300.0"
+            prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8">
+    <children>
+        <ImageView fitHeight="85.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <image>
+                <Image url="http://encodedscripting.com/resources/smither/gui_header.png"/>
+            </image>
+        </ImageView>
+        <AnchorPane fx:id="paneSelection" layoutX="40.0" layoutY="86.0" prefHeight="100.0" prefWidth="200.0"
+                    AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="85.0">
+            <children>
+                <VBox alignment="CENTER" fillWidth="false" minWidth="220.0" prefWidth="220.0"
+                      AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox layoutX="133.0" layoutY="175.0" minWidth="220.0" prefWidth="220.0">
+                            <children>
+                                <Button fx:id="btnSmithing" focusTraversable="false" layoutX="133.0" layoutY="175.0"
+                                        mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Smithing">
+                                    <HBox.margin>
+                                        <Insets right="20.0"/>
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="btnSmelting" focusTraversable="false" layoutX="300.0" layoutY="175.0"
+                                        mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Smelting"/>
+                            </children>
+                        </HBox>
+                        <Button fx:id="btnPrevious" focusTraversable="false" layoutX="133.0" layoutY="238.0"
+                                minWidth="220.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="220.0"
+                                text="Use Previous Setup">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="paneSmelting" layoutX="40.0" layoutY="25.0" prefHeight="100.0" prefWidth="200.0"
+                    visible="false" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0"
+                    AnchorPane.topAnchor="85.0">
+            <children>
+                <VBox alignment="CENTER" layoutX="31.0" layoutY="53.0" spacing="2.0" AnchorPane.leftAnchor="0.0"
+                      AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <Label layoutX="61.0" layoutY="97.0" text="Smelting"/>
+                        <ComboBox fx:id="cbSmelting" layoutX="61.0" layoutY="114.0" prefWidth="150.0"/>
+                        <Button fx:id="btnStartSmelting" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="Start">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="paneSmithing" layoutX="50.0" layoutY="35.0" prefHeight="100.0" prefWidth="300.0"
+                    visible="false" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                    AnchorPane.topAnchor="85.0">
+            <children>
+                <VBox alignment="CENTER" layoutX="31.0" layoutY="53.0" prefWidth="280.0" spacing="2.0"
+                      AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                        <HBox prefWidth="280.0" spacing="10.0">
+                            <children>
+                                <VBox spacing="2.0">
+                                    <children>
+                                        <Label text="Bar"/>
+                                        <ComboBox fx:id="cbSmithingBar" prefWidth="150.0"/>
+                                    </children>
+                                </VBox>
+                                <VBox spacing="2.0">
+                                    <children>
+                                        <Label layoutX="61.0" layoutY="97.0" text="Item"/>
+                                        <ComboBox fx:id="cbSmithing" layoutX="61.0" layoutY="114.0" prefWidth="150.0"/>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </HBox>
+                        <Button fx:id="btnStartSmithing" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0"
+                                text="Start">
+                            <VBox.margin>
+                                <Insets top="10.0"/>
+                            </VBox.margin>
+                        </Button>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

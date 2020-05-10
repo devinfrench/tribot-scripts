@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Button fx:id="btnStart" layoutX="14.0" layoutY="352.0" mnemonicParsing="false" text="Start"
+                AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                AnchorPane.topAnchor="350.0"/>
+        <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE"
+                 AnchorPane.bottomAnchor="55.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"
+                 AnchorPane.topAnchor="10.0">
+            <tabs>
+                <Tab text="Preset">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"
+                                    styleClass="anchor-tab-pane">
+                            <children>
+                                <VBox alignment="CENTER" layoutX="42.0" layoutY="60.0" spacing="20.0"
+                                      AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+                                      AnchorPane.topAnchor="50.0">
+                                    <children>
+                                        <VBox alignment="CENTER" layoutX="42.0" layoutY="60.0">
+                                            <children>
+                                                <Label alignment="TOP_LEFT" layoutX="42.0" layoutY="60.0" text="Tree"/>
+                                                <ComboBox fx:id="cbPresetTree" layoutX="42.0" layoutY="80.0"
+                                                          prefWidth="200.0"/>
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" layoutX="215.0" layoutY="110.0">
+                                            <children>
+                                                <Label layoutX="42.0" layoutY="60.0" text="Location"/>
+                                                <ComboBox fx:id="cbPresetLocation" layoutX="42.0" layoutY="80.0"
+                                                          prefWidth="200.0"/>
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" layoutX="76.0" layoutY="159.0">
+                                            <children>
+                                                <Label layoutX="42.0" layoutY="60.0" text="Option"/>
+                                                <ComboBox fx:id="cbPresetOption" layoutX="42.0" layoutY="80.0"
+                                                          prefWidth="200.0"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Custom">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"
+                                    styleClass="anchor-tab-pane">
+                            <children>
+                                <VBox alignment="CENTER" layoutX="145.0" layoutY="53.0"/>
+                                <TextFlow layoutX="190.0" layoutY="41.0" prefWidth="200.0" textAlignment="CENTER"
+                                          AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+                                          AnchorPane.topAnchor="50.0">
+                                    <children>
+                                        <VBox alignment="CENTER">
+                                            <children>
+                                                <Text fill="#515a4e" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                      styleClass="title-text" text="Tree Selection"/>
+                                                <Text fill="#515a4e" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                      styleClass="body-text" text="Ensure the game screen is focused."
+                                                      textAlignment="CENTER"/>
+                                                <Text fill="#515a4e" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                      styleClass="body-text"
+                                                      text="Middle or right mouse click the tree or stump to add it to the valid trees list."
+                                                      textAlignment="CENTER"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </TextFlow>
+                                <TextFlow layoutX="200.0" layoutY="51.0" prefWidth="200.0" textAlignment="CENTER"
+                                          AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+                                          AnchorPane.topAnchor="120.0">
+                                    <children>
+                                        <VBox alignment="CENTER">
+                                            <children>
+                                                <Text fill="#515a4e" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                      styleClass="title-text" text="Banking"/>
+                                                <Text fill="#515a4e" strokeType="OUTSIDE" strokeWidth="0.0"
+                                                      styleClass="body-text"
+                                                      text="Banking is only supported at banks accessible via WebWalking."
+                                                      textAlignment="CENTER"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </TextFlow>
+                                <HBox alignment="CENTER" layoutX="70.0" layoutY="200.0" spacing="60.0"
+                                      AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+                                      AnchorPane.topAnchor="190.0">
+                                    <children>
+                                        <VBox alignment="CENTER" layoutX="70.0" layoutY="200.0">
+                                            <children>
+                                                <Label layoutX="70.0" layoutY="200.0" text="Tree"/>
+                                                <ComboBox fx:id="cbCustomTree" layoutX="70.0" layoutY="232.0"
+                                                          prefWidth="150.0"/>
+                                            </children>
+                                        </VBox>
+                                        <VBox alignment="CENTER" layoutX="283.0" layoutY="209.0">
+                                            <children>
+                                                <Label layoutX="70.0" layoutY="200.0" text="Option"/>
+                                                <ComboBox fx:id="cbCustomOption" layoutX="70.0" layoutY="232.0"
+                                                          prefWidth="150.0"/>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Settings">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"
+                                    styleClass="anchor-tab-pane">
+                            <children>
+                                <HBox alignment="CENTER" layoutX="14.0" layoutY="14.0" spacing="60.0"
+                                      AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"
+                                      AnchorPane.topAnchor="60.0">
+                                    <children>
+                                        <VBox layoutX="14.0" layoutY="14.0" spacing="10.0">
+                                            <children>
+                                                <CheckBox fx:id="chkbxReactionTimes" layoutX="14.0" layoutY="14.0"
+                                                          mnemonicParsing="false" text="Enable Reaction Times"/>
+                                                <CheckBox fx:id="chkbxTimedActions" mnemonicParsing="false"
+                                                          selected="true" text="Enable Timed Actions"/>
+                                                <CheckBox fx:id="chkbxNests" layoutX="14.0" layoutY="47.0"
+                                                          mnemonicParsing="false" selected="true" text="Pick Up Nests"/>
+                                                <VBox layoutX="14.0" layoutY="88.0">
+                                                    <children>
+                                                        <Label layoutX="14.0" layoutY="88.0" text="Shift Drop Pattern"/>
+                                                        <ComboBox fx:id="cbDropPattern" prefWidth="175.0"/>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </VBox>
+                                        <VBox layoutX="337.0" layoutY="39.0" spacing="10.0">
+                                            <children>
+                                                <VBox layoutX="337.0" layoutY="39.0">
+                                                    <children>
+                                                        <Label layoutX="337.0" layoutY="39.0" text="Stop Level"/>
+                                                        <TextField fx:id="tfLevel" layoutX="337.0" layoutY="64.0"
+                                                                   promptText="Level"/>
+                                                    </children>
+                                                </VBox>
+                                                <VBox layoutX="352.0" layoutY="122.0">
+                                                    <children>
+                                                        <Label layoutX="352.0" layoutY="122.0"
+                                                               text="Stop Time (Hours)"/>
+                                                        <TextField fx:id="tfHours" layoutX="352.0" layoutY="149.0"
+                                                                   promptText="Hours"/>
+                                                    </children>
+                                                </VBox>
+                                            </children>
+                                        </VBox>
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

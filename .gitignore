@@ -1,0 +1,14 @@
+allatori.jar
+allatori-annotations.jar
+src/scripts/debug/
+src/scripts/farming/
+src/scripts/thieving/
+src/scripts/tools/
+Auto Crafter Pro/
+Auto Fisher Pro/
+Auto Runecrafter Pro/
+Auto Tithe Farm Pro/
+Auto Wintertodt Pro/
+Auto Oak Planker/
+api/
+*Session.*

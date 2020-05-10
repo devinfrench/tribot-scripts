@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Auto Agility/Auto Agility.iml" filepath="$PROJECT_DIR$/Auto Agility/Auto Agility.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Cooker/Auto Cooker.iml" filepath="$PROJECT_DIR$/Auto Cooker/Auto Cooker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Crafter Pro/Auto Crafter Pro.iml" filepath="$PROJECT_DIR$/Auto Crafter Pro/Auto Crafter Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Fisher Pro/Auto Fisher Pro.iml" filepath="$PROJECT_DIR$/Auto Fisher Pro/Auto Fisher Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Miner/Auto Miner.iml" filepath="$PROJECT_DIR$/Auto Miner/Auto Miner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Oak Planker/Auto Oak Planker.iml" filepath="$PROJECT_DIR$/Auto Oak Planker/Auto Oak Planker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Runecrafter Pro/Auto Runecrafter Pro.iml" filepath="$PROJECT_DIR$/Auto Runecrafter Pro/Auto Runecrafter Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Smither/Auto Smither.iml" filepath="$PROJECT_DIR$/Auto Smither/Auto Smither.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Tanner/Auto Tanner.iml" filepath="$PROJECT_DIR$/Auto Tanner/Auto Tanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Tithe Farm Pro/Auto Tithe Farm Pro.iml" filepath="$PROJECT_DIR$/Auto Tithe Farm Pro/Auto Tithe Farm Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Wintertodt Pro/Auto Wintertodt Pro.iml" filepath="$PROJECT_DIR$/Auto Wintertodt Pro/Auto Wintertodt Pro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto Woodcutter/Auto Woodcutter.iml" filepath="$PROJECT_DIR$/Auto Woodcutter/Auto Woodcutter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api/api.iml" filepath="$PROJECT_DIR$/api/api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tribot.iml" filepath="$PROJECT_DIR$/tribot.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8">
+    <children>
+        <Button fx:id="btnStart" layoutX="24.0" layoutY="352.0" mnemonicParsing="false" prefHeight="40.0" text="Start"
+                AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0"/>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" styleClass="pane" AnchorPane.bottomAnchor="55.0"
+                    AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <TextFlow prefWidth="200.0" textAlignment="CENTER" AnchorPane.leftAnchor="20.0"
+                          AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+                    <children>
+                        <VBox alignment="CENTER">
+                            <children>
+                                <Text fill="#598a9e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="title-text"
+                                      text="Rock Selection"/>
+                                <Text fill="#598a9e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body-text"
+                                      text="Ensure the game screen is focused."/>
+                                <Text fill="#598a9e" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="body-text"
+                                      text="Middle or right mouse click the rock to add it to the valid rocks list."/>
+                            </children>
+                        </VBox>
+                    </children>
+                </TextFlow>
+                <HBox alignment="CENTER" layoutX="40.0" layoutY="143.0" spacing="60.0" AnchorPane.leftAnchor="20.0"
+                      AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="120.0">
+                    <children>
+                        <VBox layoutX="40.0" layoutY="151.0" spacing="10.0">
+                            <children>
+                                <VBox layoutX="40.0" layoutY="151.0">
+                                    <children>
+                                        <Label layoutX="40.0" layoutY="151.0" text="Option"/>
+                                        <ComboBox fx:id="cbOption" layoutX="40.0" layoutY="180.0" prefWidth="175.0"/>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="41.0" layoutY="241.0">
+                                    <children>
+                                        <Label layoutX="53.0" layoutY="241.0" text="Stop Level"/>
+                                        <TextField fx:id="tfLevel" layoutX="41.0" layoutY="269.0" promptText="Level"/>
+                                    </children>
+                                </VBox>
+                                <VBox layoutX="152.0" layoutY="201.0">
+                                    <children>
+                                        <Label layoutX="53.0" layoutY="241.0" text="Stop Time (Hours)"/>
+                                        <TextField fx:id="tfHours" layoutX="41.0" layoutY="269.0" promptText="Hours"/>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </VBox>
+                        <VBox layoutX="115.0" layoutY="143.0" spacing="15.0">
+                            <children>
+                                <VBox layoutX="325.0" layoutY="143.0">
+                                    <children>
+                                        <Label layoutX="40.0" layoutY="151.0" text="Shift Drop Pattern"/>
+                                        <ComboBox fx:id="cbDropPattern" layoutX="40.0" layoutY="180.0"
+                                                  prefWidth="175.0"/>
+                                    </children>
+                                    <VBox.margin>
+                                        <Insets bottom="10.0"/>
+                                    </VBox.margin>
+                                </VBox>
+                                <CheckBox fx:id="chkbxStationary" mnemonicParsing="false"
+                                          text="Enable Stationary Mode"/>
+                                <CheckBox fx:id="chkbxTimedActions" mnemonicParsing="false"
+                                          text="Enable Timed Actions"/>
+                                <CheckBox fx:id="chkbxReactionTimes" mnemonicParsing="false"
+                                          text="Enable Reaction Times"/>
+                            </children>
+                        </VBox>
+                    </children>
+                </HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
