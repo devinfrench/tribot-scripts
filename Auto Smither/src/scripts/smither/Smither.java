@@ -5,7 +5,6 @@ import org.tribot.api.input.Mouse;
 import org.tribot.api2007.Camera;
 import org.tribot.api2007.Skills;
 import org.tribot.script.ScriptManifest;
-import org.tribot.script.interfaces.Breaking;
 import org.tribot.script.interfaces.Ending;
 import org.tribot.script.interfaces.EventBlockingOverride;
 import org.tribot.script.interfaces.Painting;
@@ -40,7 +39,7 @@ import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
 @ScriptManifest(category = "Smithing", name = "Auto Smither", authors = "Encoded", version = 2018, description = "Local")
-public class Smither extends TaskScript implements Breaking, Ending, Painting, ExperienceListener, EventBlockingOverride {
+public class Smither extends TaskScript implements Ending, Painting, ExperienceListener, EventBlockingOverride {
 
     private Statistics stats;
 
@@ -149,15 +148,6 @@ public class Smither extends TaskScript implements Breaking, Ending, Painting, E
         super.onPaint(g);
     }
 
-    @Override
-    public void onBreakStart(long l) {
-        super.onBreakStart(l);
-    }
-
-    @Override
-    public void onBreakEnd() {
-        super.onBreakEnd();
-    }
 
     @Override
     public EventBlockingOverride.OVERRIDE_RETURN overrideMouseEvent(MouseEvent e) {

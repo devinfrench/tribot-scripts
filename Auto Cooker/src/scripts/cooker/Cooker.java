@@ -45,8 +45,7 @@ import java.awt.event.MouseEvent;
 import static scripts.cooker.data.Constants.GRAPES;
 
 @ScriptManifest(category = "Cooking", name = "Auto Cooker", authors = "Encoded", version = 1.0, description = "Local")
-public class Cooker extends DecisionTreeScript implements Ending, Painting, EventBlockingOverride, ExperienceListener,
-  Breaking {
+public class Cooker extends DecisionTreeScript implements Ending, Painting, EventBlockingOverride, ExperienceListener {
 
     private Statistics stats;
     private ScriptSettings settings;
@@ -225,16 +224,6 @@ public class Cooker extends DecisionTreeScript implements Ending, Painting, Even
                 stats.addCount("cooked", 1);
             }
         }
-    }
-
-    @Override
-    public void onBreakStart(long l) {
-        super.onBreakStart(l);
-    }
-
-    @Override
-    public void onBreakEnd() {
-        super.onBreakEnd();
     }
 
 }

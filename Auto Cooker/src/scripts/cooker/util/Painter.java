@@ -1,7 +1,7 @@
 package scripts.cooker.util;
 
 import org.tribot.api2007.Skills;
-import org.tribot.script.Script;
+import scripts.api.script.Script;
 import scripts.api.util.ImageUtil;
 import scripts.api.util.Internet;
 import scripts.api.util.Statistics;

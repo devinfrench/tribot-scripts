@@ -1,7 +1,5 @@
 package scripts.tanner;
 
-import java.awt.Graphics;
-import java.util.HashMap;
 import org.tribot.api.General;
 import org.tribot.api2007.Camera;
 import org.tribot.api2007.Skills.SKILLS;
@@ -30,6 +28,9 @@ import scripts.tanner.runnables.WalkBankRunnable;
 import scripts.tanner.runnables.WalkTannerRunnable;
 import scripts.tanner.session.OSBotsSession;
 import scripts.tanner.session.Session;
+
+import java.awt.*;
+import java.util.HashMap;
 
 @ScriptManifest(category = "Tanner", name = "Auto Tanner", authors = "Encoded", version = 1.0, description = "Local")
 public class Tanner extends DecisionTreeScript implements Ending, Painting, Arguments {
@@ -112,16 +113,6 @@ public class Tanner extends DecisionTreeScript implements Ending, Painting, Argu
             Login.logout(true);
             General.sleep(600);
         }
-    }
-
-    @Override
-    public void onBreakStart(long l) {
-        super.onBreakStart(l);
-    }
-
-    @Override
-    public void onBreakEnd() {
-        super.onBreakEnd();
     }
 
     @Override

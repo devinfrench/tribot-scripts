@@ -26,7 +26,6 @@ public class Painter extends scripts.api.util.Painter {
 
     @Override
     public void update() {
-        stats.updateTimeRan();
         tanned = stats.getCount("tanned");
     }
 

@@ -39,7 +39,7 @@ import java.util.HashMap;
 import static scripts.agility.data.Constants.MARK_OF_GRACE;
 
 @ScriptManifest(authors = "Encoded", name = "Auto Agility", category = "Agility", version = 1.0, description = "Local")
-public class Agility extends TaskScript implements Painting, Breaking, EventBlockingOverride, Ending,
+public class Agility extends TaskScript implements Painting, EventBlockingOverride, Ending,
   ExperienceListener, InventoryListener, Arguments {
 
     private Statistics stats;
@@ -233,15 +233,5 @@ public class Agility extends TaskScript implements Painting, Breaking, EventBloc
     @Override
     public void inventoryItemRemoved(int id, int count) {
 
-    }
-
-    @Override
-    public void onBreakStart(long l) {
-        super.onBreakStart(l);
-    }
-
-    @Override
-    public void onBreakEnd() {
-        super.onBreakEnd();
     }
 }

@@ -211,13 +211,4 @@ public class Miner extends DecisionTreeScript implements Ending, EventBlockingOv
         return OVERRIDE_RETURN.PROCESS;
     }
 
-    @Override
-    public void onBreakStart(long l) {
-        super.onBreakStart(l);
-    }
-
-    @Override
-    public void onBreakEnd() {
-        super.onBreakEnd();
-    }
 }
